@@ -32,7 +32,8 @@ const querySchema = {
     type: "object",
     properties: {
         id: { type: "number", nullable: true, minimum: 1, default: 4 }
-    }
+    },
+    additionalProperties: false,
 } as const satisfies JSONSchema
 const payloadSchema = {
     type: "object",
@@ -40,7 +41,8 @@ const payloadSchema = {
     properties: {
         username: { type: "string" },
         password: { type: "string" },
-    }
+    },
+    additionalProperties: false,
 } as const satisfies JSONSchema
 
 type payload = FromSchema<typeof payloadSchema>;
