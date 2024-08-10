@@ -1,1 +1,8 @@
-Basic Typescript setup with Fastify using JSON schema for strongly typed endpoints
+### Typescript setup with Fastify
+
+Features
+* JSON schema validation
+* Fully typed inputs
+* Compression
+* CORS
+* OpenAPI
