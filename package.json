@@ -1,0 +1,30 @@
+{
+  "name": "weeb",
+  "version": "1.0.0",
+  "description": "weeb",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/compress": "^7.0.3",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/swagger": "^8.15.0",
+    "@fastify/swagger-ui": "^4.0.1",
+    "@fastify/type-provider-json-schema-to-ts": "^3.0.0",
+    "fastify": "^4.28.1",
+    "i": "^0.3.7",
+    "npm": "^10.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "json-schema-to-ts": "^3.1.0",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4"
+  }
+}
