@@ -45,6 +45,10 @@ const payloadSchema = {
 
 type payload = FromSchema<typeof payloadSchema>;
 
+server.get('/', async (request, reply) => {
+    return reply.redirect("/ping")
+})
+
 server.get('/ping', async (request, reply) => {
     return reply.send(`p${"o".repeat(100000)}ng`)
 })
